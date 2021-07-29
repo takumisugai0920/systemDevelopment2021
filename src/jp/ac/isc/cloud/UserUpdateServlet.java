@@ -29,7 +29,6 @@ public class UserUpdateServlet extends HttpServlet {
 		try {
 			Connection users = null;
 			try {
-				request.setCharacterEncoding("utf-8");
 				Class.forName("com.mysql.jdbc.Driver");
 					users = DriverManager.getConnection("jdbc:mysql://localhost/servlet_db?useUnicode=true&characterEncoding=utf8","root","");
 					String id = request.getParameter("updateId");
